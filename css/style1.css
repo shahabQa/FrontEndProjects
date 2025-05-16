@@ -1,0 +1,21 @@
+h2{ 
+    color: orange;
+    
+}
+p{
+    color: white;
+    background-color: black;
+}
+button{
+    color: white;
+    background-color: blue;
+    
+    border: 0;
+    border-radius: 90px;
+    font-family:  sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    
+
+}
+

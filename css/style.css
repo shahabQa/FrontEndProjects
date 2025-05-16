@@ -1,0 +1,23 @@
+
+       
+      h1 {
+        color:rgb(255, 140, 0);
+      }
+      h3{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color:#6495ed
+        
+        
+      }
+      button {
+        color: #6495ed
+        background-color burlywood;
+      }
+      p{
+        font-family: 'Lucida Grande';
+        color:darkgreen;
+        size:0vmax;
+        font-weight: bolder;
+      }
+      
+    

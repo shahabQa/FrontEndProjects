@@ -7,22 +7,41 @@
 
     <style>
       body {
-        background-image: url(bacPic2.png);
+        background-image: url(frontend-project-pictures/bacPicBW.png);
         background-repeat: no-repeat;
-        background-size: 1295px 390px;
+        background-size: 1295px 420px;
+      }
+      .thumbnail1 {
+        opacity: 60%;
+        padding-left: 540px;
+      }
+      .footer {
+        text-align: center;
+      }
+      .school-certificates {
+        text-align: center;
+        text-decoration-style: double;
+        margin-top: 50px;
       }
     </style>
   </head>
   <body>
     <h4 style="color: darksalmon">Ahm S Ahmed</h4>
-    <img src="ahmAhmedPic.jpg" height="196" width="120" />
+    <div>
+      <img
+        class="thumbnail1"
+        src="frontend-project-pictures/ahmAhmedPic.jpg"
+        height="196"
+        width="120"
+      />
+    </div>
 
-    <header>
-      <font face="papyrus" size="4" color="#8a2be2">Ahm S Ahmed</font>
-    </header>
+    <!-- <header>
+      <font face="papyrus" ,size="4" color="#" FFFFCC>Ahm S Ahmed</font>
+    </header> -->
     <div>
       <p>
-        <font face="papyrus" size="3" color="darksalmon">
+        <font face="papyrus" size="3" font-weight="bold" color="f3fa63">
           Hello! I'm a tech enthusiast with a passion for learning new skills
           and exploring the latest advancements in technology. I love traveling
           to new places, soaking in diverse cultures, and experiencing the
@@ -34,14 +53,14 @@
         >
       </p>
     </div>
-    <header>
-      <font face="DaunPenh" size="4" color="black"
-        >My Schools & Certification</font
-      >
-    </header>
+    <div class="school-certificates">
+      <header>
+        <font face="DaunPenh" size="6" color="black"
+          >My Schools & Certification</font
+        >
+      </header>
 
-    <div>
-      <table border="black">
+      <table border="black" align="center">
         <!-- <caption>
           Name of Schools & Results
         </caption> -->
@@ -75,6 +94,7 @@
         </tr>
       </table>
     </div>
+
     <p>
       <font face="Bradley Hand" size="4" color="#8a2be2"
         >Sylhet MC College</font
@@ -120,8 +140,15 @@
     </header>
     <p>I like to learn new skills, Fishing at summer, travel new places</p>
     <footer>
-      <p><font face="Lucida Console" size="5" color="#ff7f50">Contact</font></p>
-      <p>Please call @ 856 234 2156, email- shab_nj@yahoo.com</p>
+      <div class="footer">
+        <p>
+          <font face="Lucida Console" size="5" color="#ff7f50">Contact</font>
+        </p>
+        <p>
+          Please call @ 856 234 2156,<br />
+          email- shab_nj@yahoo.com
+        </p>
+      </div>
     </footer>
   </body>
 </html>

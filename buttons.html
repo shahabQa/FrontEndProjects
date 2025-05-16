@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style> 
+    .form-container {
+       width: 300px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;  
+      text-align: center; 
+  }
+      
+    </style>
   </head>
   <body>
     <!-- ctrl+/ = comment on VScode
@@ -17,7 +28,7 @@
           id="emailaddress"
           placeholder="please enter your email address"
         />
-      </div>
+      </div cl>
       <level for="password">Password</level>
       <input
         type="password"
@@ -64,5 +75,13 @@
       <button type="Reset">Clear search</button>
       <!--  -->
     </form>
+    <div class="form-container">
+      <h4>Sign In</h4>
+      <form>
+          <!-- <input type="text" placeholder="Email"> -->
+          <input type="password" placeholder="enter your emailaddress"><br>
+          <button type="submit">submit</button>
+      </form>
+  </div>
   </body>
 </html>
