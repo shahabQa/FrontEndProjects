@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   font-family: url(LeagueSpartan-Bold.otf);
   color: #ffa511;
@@ -26,3 +27,33 @@
   text-underline-offset: 2px;
   text-transform: uppercase;
 } */
+=======
+* {
+  font-family: url(LeagueSpartan-Bold.otf);
+  color: #ffa511;
+  text-align: center;
+  text-size-adjust: 55px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: teal;
+  text-underline-offset: 1px;
+  text-transform: uppercase;
+}
+/* .double-underline {
+  font-family: url(LeagueSpartan-Bold.otf);
+  color: #ffa511;
+  text-align: center;
+  text-size-adjust: 55px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.5px;
+  text-decoration-line: underline;
+  text-decoration-color: teal;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-transform: uppercase;
+} */
+>>>>>>> 2992c8226872996ae0bc5b4d3e1fdf0763d9ac69

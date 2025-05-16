@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: wheat;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -61,3 +62,69 @@ button {
   background-color: aquamarine;
   margin-left: 200px;
   margin-right: 200px; */
+=======
+body {
+  background-color: wheat;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+  font: 500;
+  color: red;
+  text-align: center;
+}
+/* .name{
+    text-align: center;
+    text-decoration-color: red;
+   }  */
+.poetname {
+  text-align: center;
+  text-decoration-color: black;
+}
+
+/* .poem{
+     margin-left: 140px;
+    margin-right: 140px;
+    text-align: center;
+    text-decoration: rgb(200, 6, 45);
+    line-height: 30px; 
+
+}   */
+h4 {
+  text-align: center;
+  text-decoration-line: none;
+}
+.link {
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: rgb(0, 128, 0);
+}
+
+textarea {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+
+button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  align-content: center;
+  background-color: white;
+  color: violet;
+}
+.poem {
+  color: #a52a2a;
+  text-align: center;
+  line-height: 30px;
+}
+/* .poem:hover {
+  color: red;
+  background-color: aquamarine;
+  margin-left: 200px;
+  margin-right: 200px; */
+}
+>>>>>>> 2992c8226872996ae0bc5b4d3e1fdf0763d9ac69
