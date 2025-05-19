@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiritual Journey - Umrah Packages to Makkah</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+
+      /* Header Styles */
+      header {
+        background-color: #036;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .logo span {
+        color: #f8b400;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 1.5rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #f8b400;
+      }
+
+      .contact-btn {
+        background-color: #f8b400;
+        color: #036;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://images.unsplash.com/photo-1519817650390-64a93db51149");
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 0 2rem;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin-bottom: 2rem;
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .btn {
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      .btn-primary {
+        background-color: #f8b400;
+        color: #036;
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Features Section */
+      .features {
+        padding: 4rem 2rem;
+        background-color: white;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #036;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .feature-card {
+        background-color: #f9f9f9;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-icon {
+        font-size: 2.5rem;
+        color: #f8b400;
+        margin-bottom: 1rem;
+      }
+
+      /* Packages Section */
+      .packages {
+        padding: 4rem 2rem;
+        background-color: #f5f5f5;
+      }
+
+      .packages-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .package-card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .package-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .package-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .package-content {
+        padding: 1.5rem;
+      }
+
+      .package-title {
+        color: #036;
+        margin-bottom: 0.5rem;
+      }
+
+      .package-price {
+        font-size: 1.5rem;
+        color: #f8b400;
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+
+      .package-details {
+        margin-bottom: 1.5rem;
+      }
+
+      .package-details li {
+        margin-bottom: 0.5rem;
+        list-style-type: none;
+        position: relative;
+        padding-left: 1.5rem;
+      }
+
+      .package-details li:before {
+        content: "✓";
+        color: #f8b400;
+        position: absolute;
+        left: 0;
+      }
+
+      .package-btn {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        background-color: #036;
+        color: white;
+        padding: 0.8rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .package-btn:hover {
+        background-color: #024;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #036;
+        color: white;
+        padding: 3rem 2rem;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .footer-column h3 {
+        margin-bottom: 1.5rem;
+        color: #f8b400;
+      }
+
+      .footer-column ul {
+        list-style: none;
+      }
+
+      .footer-column ul li {
+        margin-bottom: 0.8rem;
+      }
+
+      .footer-column ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-column ul li a:hover {
+        color: #f8b400;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .social-links a {
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
+
+      .social-links a:hover {
+        color: #f8b400;
+      }
+
+      .copyright {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          padding: 1rem;
+        }
+
+        nav ul {
+          margin-top: 1rem;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .cta-buttons {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .btn {
+          width: 100%;
+          margin-bottom: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">Spiritual<span>Journey</span></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+11234567890" class="contact-btn"
+        ><i class="fas fa-phone"></i> +1 (123) 456-7890</a
+      >
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Experience a Spiritual Journey to Makkah</h1>
+      <p>
+        Trusted Umrah packages with premium services, comfortable
+        accommodations, and expert guidance for your sacred pilgrimage.
+      </p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">View Packages</a>
+        <a href="#" class="btn btn-secondary">Get a Quote</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2 class="section-title">Why Choose Our Umrah Services</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-passport"></i></div>
+          <h3>Visa Processing</h3>
+          <p>
+            Complete visa assistance with high approval rates and quick
+            processing times.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-hotel"></i></div>
+          <h3>Premium Accommodation</h3>
+          <p>
+            4 & 5 star hotels just minutes from Masjid al-Haram and Masjid
+            an-Nabawi.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-plane"></i></div>
+          <h3>Flight Arrangements</h3>
+          <p>
+            Direct and connecting flights from major cities worldwide at
+            competitive prices.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h3>Guided Ziyarat Tours</h3>
+          <p>
+            Knowledgeable guides for historical and religious sites in Makkah
+            and Madinah.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-user-friends"></i></div>
+          <h3>Group Options</h3>
+          <p>
+            Special arrangements for families, couples, and female-only groups.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>Dedicated support team available throughout your journey.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages">
+      <h2 class="section-title">Our Popular Umrah Packages</h2>
+      <div class="packages-grid">
+        <div class="package-card">
+          <div
+            class="package-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1547996160-81dfa63595aa');
+            "
+          ></div>
+          <div class="package-content">
+            <h3 class="package-title">Economy Umrah Package</h3>
+            <div class="package-price">From $1,999</div>
+            <ul class="package-details">
+              <li>14 days in Makkah & Madinah</li>
+              <li>3-star hotel accommodations</li>
+              <li>Group flights from major cities</li>
+              <li>Daily transportation to Haram</li>
+              <li>Basic ziyarat tours</li>
+            </ul>
+            <a href="#" class="package-btn">View Details</a>
+          </div>
+        </div>
+        <div class="package-card">
+          <div
+            class="package-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1519817650390-64a93db51149');
+            "
+          ></div>
+          <div class="package-content">
+            <h3 class="package-title">Deluxe Umrah Package</h3>
+            <div class="package-price">From $3,499</div>
+            <ul class="package-details">
+              <li>21 days in Makkah & Madinah</li>
+              <li>5-star hotels near Haram</li>
+              <li>Direct flights available</li>
+              <li>Private transportation</li>
+              <li>Comprehensive ziyarat program</li>
+            </ul>
+            <a href="#" class="package-btn">View Details</a>
+          </div>
+        </div>
+        <div class="package-card">
+          <div
+            class="package-image"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1572252222443-81fb946b74c4');
+            "
+          ></div>
+          <div class="package-content">
+            <h3 class="package-title">Ramadan Umrah Package</h3>
+            <div class="package-price">From $4,299</div>
+            <ul class="package-details">
+              <li>Special Ramadan 10-day program</li>
+              <li>Premium hotels with iftar service</li>
+              <li>Priority access to Haram</li>
+              <li>Scholars' lectures and programs</li>
+              <li>Itikaf arrangements available</li>
+            </ul>
+            <a href="#" class="package-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Spiritual Journey</h3>
+          <p>
+            Providing exceptional Umrah experiences since 2010 with a focus on
+            spiritual comfort and excellent service.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Umrah Packages</a></li>
+            <li><a href="#">Hajj Packages</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Visa Processing</a></li>
+            <li><a href="#">Flight Bookings</a></li>
+            <li><a href="#">Hotel Reservations</a></li>
+            <li><a href="#">Transportation</a></li>
+            <li><a href="#">Ziyarat Tours</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 123 Islamic Center, New
+              York, USA
+            </li>
+            <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+            <li><i class="fas fa-envelope"></i> info@spiritualjourney.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Spiritual Journey. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

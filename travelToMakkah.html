@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Umrah packages from the USA to Makkah. Book your spiritual journey with ease."
+    />
+    <title>Umrah Packages from USA</title>
+    <link rel="stylesheet" href="travelToMakkah.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <!-- <h1><a href="#">Labbaik Allahumma Labbaik</a></h1> -->
+        <img class="logo1" src="frontend-project-pictures\labbaikSClogo.png"/>
+      </div>
+      <!-- <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul> -->
+      </nav>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#packages" class="nav-link">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- <style>
+       */  .main-nav {
+          background-color: #8be2eb;
+          padding: 1rem;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .nav-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 1rem;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+
+        .nav-link {
+          color: rgb(113, 79, 247);
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+          background-color: #6471f7;
+        }
+
+        .nav-link.active {
+          background-color: #3498db;
+          font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+          .nav-list {
+            flex-direction: column;
+          }
+        } */ -->
+      </style>
+      <div>
+        <p class="banner">
+          Start your spiritual journey today with our customized Umrah packages.
+        </p>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-text">
+        <!-- <h2>Book Your Umrah Journey from the USA to Makkah</h2> -->
+      
+       <a href="#packages" class="cta-btn">View Packages</a>
+      </div>
+    </section>
+    <div class="video-background">
+      <div class="video-foreground">
+        <iframe
+          src="https://www.youtube.com/embed/PPVvoWbReMI?autoplay=1&mute=1&loop=1&playlist=PPVvoWbReMI&controls=0"
+          frameborder="0"
+          allow="autoplay"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Packages Section -->
+    <section id="packages">
+      <!-- <h2>Our Umrah Packages</h2> -->
+      <div class="package-list">
+        <!-- Package 1 -->
+        <div class="package">
+          <h3>Silver Umrah Package</h3>
+          <p>
+            7 days in Makkah and Madinah. 4-star hotel accommodations, visa
+            processing, flights, and transportation.
+          </p>
+          <p><strong>Price:</strong> $2,499</p>
+          <p></p>
+          <a href="#book-now" class="cta-btn">Book Now</a>
+        </div>
+        <!-- Package 2 -->
+        <div class="package">
+          <h3>Gold Umrah Package</h3>
+          <p>
+            10 days in Makkah and Madinah. 5-star accommodations, full
+            transportation, and personal guide.
+          </p>
+          <p><strong>Price:</strong> $3,499</p>
+          <p></p>
+          <a href="#book-now" class="cta-btn">Book Now</a>
+        </div>
+        <!-- Package 3 -->
+        <div class="package">
+          <h4>Platinum Umrah Package</h4>
+          <p>
+            14 days in Makkah & Madinah. Premium accommodations, guided tours
+            and transportation.
+          </p>
+          <p><strong>Price:</strong> $4,999</p>
+          <p></p>
+          <a href="#book-now" class="cta-btn">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book-now">
+      <h2>Book Your Umrah Package</h2>
+      <form action="submit-booking.php" method="POST">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="package">Choose Package:</label>
+        <select id="package" name="package" required>
+          <option value="silver">Silver Umrah Package</option>
+          <option value="gold">Gold Umrah Package</option>
+          <option value="platinum">Platinum Umrah Package</option>
+        </select>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="paypal">PayPal</option>
+          <option value="credit-card">Credit Card</option>
+        </select>
+
+        <button type="submit" class="cta-btn">Submit Booking</button>
+      </form>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        At Labbaik Umrah Travel, we aim to make your spiritual journey to Makkah
+        a smooth and memorable experience. We offer a variety of packages that
+        cater to different needs and budgets. Our team is dedicated to ensuring
+        your Umrah trip is seamless from start to finish.
+      </p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="submit-contact.php" method="POST">
+        <label for="contact-name">Name:</label>
+        <input type="text" id="contact-name" name="contact-name" required />
+
+        <label for="contact-email">Email:</label>
+        <input type="email" id="contact-email" name="contact-email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Your Umrah Journey. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </footer>
+
+    <!-- Scripts (optional) -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

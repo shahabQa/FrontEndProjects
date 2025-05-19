@@ -4,9 +4,11 @@
 }
 h1 {
   color: rgb(255, 0, 0);
+  font: size 80px;
 }
 p {
-  color: rgb(60, 0, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
 }
 h3 {
   color: rgb(248, 15, 244);
@@ -37,10 +39,33 @@ p a {
 /* adjacent sibling combinator */
 p + h3 {
   text-decoration-line: underline;
-  background-color: aqua;
+  /* background-color: aqua; */
   color: blue;
 }
-/* child combinator
+/* child combinator */
 div > input {
   background-color: gold;
-} */
+}
+h1::first-letter {
+  color: rgb(20, 165, 255);
+}
+div > p::first-line {
+  color: rgb(185, 138, 20);
+  font-family: arial narrow;
+  background-color: rgb(233, 240, 30);
+}
+p::selection {
+  color: rgb(104, 113, 6);
+}
+div > p::first-letter {
+  color: rgb(253, 24, 24);
+  font-style: italic;
+  font-size: xx-large;
+  background-color: chartreuse;
+}
+div > P {
+  color: black;
+  font-weight: 900;
+  font-family: roboto;
+  text-align: justify;
+}

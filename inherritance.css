@@ -1,0 +1,21 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.hero-section {
+  text-align: center;
+}
+h1 {
+  color: green;
+  font-size: 40px;
+  text-decoration-line: underline;
+}
+p {
+  font-family: sans-serif;
+  font-size: large;
+  color: red;
+}
