@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border: 2px solid #0da74d;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cards img {
+  height: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #11b2e7;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4ec0e6;
+}

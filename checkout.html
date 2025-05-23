@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="checkout-form">
+        <div class="column">
+          <h2>Billing Address</h2>
+          <label>Full Name :</label>
+          <input type="text" placeholder="john deo" />
+
+          <label>Email :</label>
+          <input type="email" placeholder="example@example.com" />
+
+          <label>Address :</label>
+          <input type="text" placeholder="room - street - locality" />
+
+          <label>City :</label>
+          <input type="text" placeholder="City" />
+
+          <label>State :</label>
+          <input type="text" placeholder="USA" />
+
+          <label>Zip Code :</label>
+          <input type="text" placeholder="123 456" />
+        </div>
+
+        <div class="column">
+          <h2>Payment</h2>
+          <label>Cards Accepted :</label>
+          <div class="cards">
+            <img src="https://img.icons8.com/color/48/000000/paypal.png" />
+            <img
+              src="https://img.icons8.com/color/48/000000/mastercard-logo.png"
+            />
+            <img src="https://img.icons8.com/color/48/000000/amex.png" />
+            <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          </div>
+
+          <label>Name On Card :</label>
+          <input type="text" placeholder="your name here" />
+
+          <label>Credit Card Number :</label>
+          <input type="text" placeholder="1111-2222-3333-4444" />
+
+          <label>Exp Month :</label>
+          <input type="text" placeholder="january" />
+
+          <label>Exp Year :</label>
+          <input type="text" placeholder="YYYY" />
+
+          <label>CVV :</label>
+          <input type="text" placeholder="1234" />
+        </div>
+
+        <button type="submit">Proceed To Checkout</button>
+      </form>
+    </div>
+  </body>
+</html>

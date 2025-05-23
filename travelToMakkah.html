@@ -13,6 +13,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Tangerine"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comforter+Brush&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+      
   </head>
   <body>
     <!-- Header Section -->
@@ -156,10 +163,10 @@
       <h2>Book Your Umrah Package</h2>
       <form action="submit-booking.php" method="POST">
         <label for="full-name">Full Name:</label>
-        <input type="text" id="full-name" name="full-name" required />
+        <input type="text" id="full-name" name="full-name"required placeholder="Full name here"/>
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required placeholder="emai@xyz.com" />
 
         <label for="package">Choose Package:</label>
         <select id="package" name="package" required>
@@ -168,15 +175,84 @@
           <option value="platinum">Platinum Umrah Package</option>
         </select>
 
-        <label for="payment">Payment Method:</label>
+        <!-- <label for="payment">Payment Method:</label>
         <select id="payment" name="payment" required>
           <option value="paypal">PayPal</option>
           <option value="credit-card">Credit Card</option>
-        </select>
+        </select> --> 
 
         <button type="submit" class="cta-btn">Submit Booking</button>
       </form>
     </section>
+    <!-- Payment Section -->
+    <section>
+    <div class="container">
+      <form class="checkout-form">
+        <div class="column">
+          <h2>Billing Address</h2>
+          <label>Full Name :</label>
+          <input type="text" placeholder="First name & Last name" />
+
+          <label>Email :</label>
+          <input type="email" placeholder="abc@xyz.com" />
+
+          <label>Address :</label>
+          <input type="text" placeholder="street name, house number" />
+
+          <label>City :</label>
+          <input type="text" placeholder="City" />
+
+          <!-- <label>State :</label>
+          <input type="text" placeholder="state" /><label for="state">Choose your state:</label> -->
+<select id="state" name="state">
+  <option value="">--Select a state--</option>
+  <option value="NY">New York</option>
+  <option value="NJ">New Jersey</option>
+  <option value="PA">Pensylvania</option>
+  <option value="DE">Delaware</option>
+  <option value="MD">Maryland</option>
+  <option value="MI">Michigan</option>
+  <option value="CT">Connecticut</option>
+  <option value="SC">South Carolina</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+
+          <label>Zip Code :</label>
+          <input type="text" placeholder="123 456" />
+        </div>
+
+        <div class="column">
+          <h2>Payment</h2>
+          <label>Cards Accepted :</label>
+          <div class="cards">
+            <img src="https://img.icons8.com/color/48/000000/paypal.png" />
+            <img
+              src="https://img.icons8.com/color/48/000000/mastercard-logo.png"
+            />
+            <img src="https://img.icons8.com/color/48/000000/amex.png" />
+            <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          </div>
+
+          <label>Name On Card :</label>
+          <input type="text" placeholder="your name here" />
+
+          <label>Credit Card Number :</label>
+          <input type="text" placeholder="1111-2222-3333-4444" />
+
+          <label>Exp Month :</label>
+          <input type="text" placeholder="january" />
+
+          <label>Exp Year :</label>
+          <input type="text" placeholder="YYYY" />
+
+          <label>CVV :</label>
+          <input type="text" placeholder="1234" />
+        </div>
+
+        <button type="submit">Proceed To Checkout</button>
+      </form>
+    </div>
+    </section> 
 
     <!-- About Us Section -->
     <section id="about">
@@ -208,11 +284,54 @@
 
     <!-- Footer Section -->
     <footer>
+      <h2>Follow Us </h2>
+      <!-- <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="facebook.png" alt="Facebook"
+        /></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><img src="whatsapp.png" alt="WhatsApp"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img src="x.png" alt="X (formerly Twitter)"
+        /></a>
+      </div> -->
+      <div class="social-icons">
+        <a
+          href="https://faecbook.com"
+          target="_blank"
+          class="facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://twitter.com/YourHandle"
+          target="_blank"
+          class="twitter"
+        >
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://wa.me/YourNumber" target="_blank" class="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://instagram.com/YourHandle"
+          target="_blank"
+          class="instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
       <p>&copy; 2025 Your Umrah Journey. All rights reserved.</p>
       <ul>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms & Conditions</a></li>
       </ul>
+      
     </footer>
 
     <!-- Scripts (optional) -->
